@@ -7,8 +7,10 @@ class Phone:
 
 class SmartPhone(Phone):
     def __init__(self, price, brand, camera, os ,ram):
-        print("Send the value to phone customer")
-        super().__init__(price,brand,camera)
+        print("Send the value to phone customer") 
+        super().__init__(price,brand,camera) 
+        # in Python, super().__init__(...) should always be the very first statement inside the child class constructor 
+        #so that the parent class is initialized before any child-specific attributes are set
         self.os = os
         self.ram = ram
         print("inside Smartphone constructor")
