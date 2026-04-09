@@ -29,4 +29,4 @@ k = 3
 print(maxSum(arr,k))
 
 # Brute Force: recalculates sums → O(n.k).
-# Sliding window version: updates sums incrementally → O(n)
+# Sliding window version: updates sums incrementally → O(n).
