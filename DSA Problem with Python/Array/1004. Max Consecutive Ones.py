@@ -1,3 +1,6 @@
+# In the first function, maxConsecutiveOnes1, the use of a Python list makes popping from the front costly, leading to a worst-case time complexity of O(n²) and 
+# space complexity of O(n). In contrast, maxConsecutiveOnes2 uses two pointers to manage the sliding window efficiently, giving a linear time complexity of O(n) and
+# constant space complexity O(1). Thus, the second approach is optimal and scales much better for large inputs.
 def maxConsecutiveOnes1(arr, k):
     window = []
     max_consecutiveOnes = 0
@@ -38,3 +41,4 @@ nums = [1,1,1,0,0,0,1,1,1,1,0]
 k = 2
 print(maxConsecutiveOnes1(nums, k))
 print(maxConsecutiveOnes2(nums, k))
+
